@@ -1,0 +1,157 @@
+Username (not for points),Assign_test.cpp,At_test.cpp,Back_test.cpp,BracketOp_test.cpp,Capacity_test.cpp,Clear_test.cpp,CopyConstructor_test.cpp,Erase_test.cpp,Front_test.cpp,Insert_test.cpp,OpEqual_test.cpp,PopBack_test.cpp,PushBack_test.cpp,Reserve_test.cpp,Shrink_test.cpp,Size_test.cpp,TemplateCheck_test.cpp,"Username accurate (0 good, 1 bad)",Bytes definitely lost (memory leak) (0 is perfect)
+mwcxp5,"In file included from unit_tests/Assign_test.cpp:1:
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+/usr/bin/ld: /tmp/cclEWPPF.o: in function `testAssign()':
+Assign_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: Assign_test.cpp:(.text+0x3f): undefined reference to `MyVector<short>::assign(int, short const&)'
+collect2: error: ld returned 1 exit status
+","In file included from hw/mwcxp5/MyVector.h:243,
+                 from unit_tests/At_test.cpp:1:
+hw/mwcxp5/MyVector.hpp: In instantiation of ‘T& MyVector<T>::at(int) [with T = short int]’:
+unit_tests/At_test.cpp:15:63:   required from here
+hw/mwcxp5/MyVector.hpp:22:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   22 | }
+      | ^
+In file included from unit_tests/At_test.cpp:1:
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+/usr/bin/ld: /tmp/cc8AqPk5.o: in function `testAt()':
+At_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+collect2: error: ld returned 1 exit status
+","/usr/bin/ld: /tmp/ccQZkt2s.o: in function `testBack()':
+Back_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: Back_test.cpp:(.text+0x98): undefined reference to `MyVector<short>::back()'
+collect2: error: ld returned 1 exit status
+","In file included from unit_tests/BracketOp_test.cpp:1:
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+/usr/bin/ld: /tmp/ccyr0RiQ.o: in function `testBracketOp()':
+BracketOp_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: BracketOp_test.cpp:(.text+0xbe): undefined reference to `MyVector<short>::operator[](int)'
+/usr/bin/ld: BracketOp_test.cpp:(.text+0xf3): undefined reference to `MyVector<short>::operator[](int)'
+collect2: error: ld returned 1 exit status
+","/usr/bin/ld: /tmp/cc8sjdtd.o: in function `testCapacity()':
+Capacity_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: Capacity_test.cpp:(.text+0x10a): undefined reference to `MyVector<short>::capacity()'
+collect2: error: ld returned 1 exit status
+","/usr/bin/ld: /tmp/cc41La2z.o: in function `testClear()':
+Clear_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: Clear_test.cpp:(.text+0xad): undefined reference to `MyVector<short>::clear()'
+collect2: error: ld returned 1 exit status
+","In file included from unit_tests/CopyConstructor_test.cpp:1:
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+/usr/bin/ld: /tmp/ccuKZkcX.o: in function `testCopyConstructor()':
+CopyConstructor_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: CopyConstructor_test.cpp:(.text+0x9b): undefined reference to `MyVector<short>::MyVector(MyVector<short> const&)'
+collect2: error: ld returned 1 exit status
+","In file included from unit_tests/Erase_test.cpp:1:
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+/usr/bin/ld: /tmp/ccWCODDl.o: in function `testRemove()':
+Erase_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: Erase_test.cpp:(.text+0x80): undefined reference to `MyVector<short>::erase(int)'
+collect2: error: ld returned 1 exit status
+","/usr/bin/ld: /tmp/cchclKHH.o: in function `testFront()':
+Front_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: Front_test.cpp:(.text+0x98): undefined reference to `MyVector<short>::front()'
+collect2: error: ld returned 1 exit status
+","In file included from unit_tests/Insert_test.cpp:1:
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+/usr/bin/ld: /tmp/ccTUtbf6.o: in function `testInsertGeneral()':
+Insert_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: Insert_test.cpp:(.text+0x3f): undefined reference to `MyVector<short>::insert(int, short const&)'
+/usr/bin/ld: Insert_test.cpp:(.text+0x5a): undefined reference to `MyVector<short>::insert(int, short const&)'
+collect2: error: ld returned 1 exit status
+","In file included from unit_tests/OpEqual_test.cpp:1:
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+/usr/bin/ld: /tmp/ccsZ75ls.o: in function `testOpEqual()':
+OpEqual_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: OpEqual_test.cpp:(.text+0x94): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: OpEqual_test.cpp:(.text+0xa7): undefined reference to `MyVector<short>::operator=(MyVector<short> const&)'
+collect2: error: ld returned 1 exit status
+","In file included from unit_tests/PopBack_test.cpp:1:
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+/usr/bin/ld: /tmp/ccQvquOQ.o: in function `testPopBack()':
+PopBack_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: PopBack_test.cpp:(.text+0xa4): undefined reference to `MyVector<short>::pop_back()'
+/usr/bin/ld: PopBack_test.cpp:(.text+0xb0): undefined reference to `MyVector<short>::pop_back()'
+/usr/bin/ld: PopBack_test.cpp:(.text+0x100): undefined reference to `MyVector<short>::pop_back()'
+/usr/bin/ld: PopBack_test.cpp:(.text+0x10c): undefined reference to `MyVector<short>::pop_back()'
+/usr/bin/ld: PopBack_test.cpp:(.text+0x118): undefined reference to `MyVector<short>::pop_back()'
+/usr/bin/ld: /tmp/ccQvquOQ.o:PopBack_test.cpp:(.text+0x124): more undefined references to `MyVector<short>::pop_back()' follow
+collect2: error: ld returned 1 exit status
+","In file included from unit_tests/PushBack_test.cpp:1:
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+/usr/bin/ld: /tmp/ccAqumhf.o: in function `testPushBack()':
+PushBack_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: PushBack_test.cpp:(.text+0x84): undefined reference to `MyVector<short>::push_back(short const&)'
+collect2: error: ld returned 1 exit status
+","/usr/bin/ld: /tmp/ccKIC9Jz.o: in function `testReserve()':
+Reserve_test.cpp:(.text+0x28): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: Reserve_test.cpp:(.text+0x39): undefined reference to `MyVector<short>::reserve(int)'
+/usr/bin/ld: Reserve_test.cpp:(.text+0x64): undefined reference to `MyVector<short>::reserve(int)'
+collect2: error: ld returned 1 exit status
+","/usr/bin/ld: /tmp/cc7HKnHZ.o: in function `testShrink()':
+Shrink_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: /tmp/cc7HKnHZ.o: in function `MyVector<short>::correct_pop_back_with_shrink_test()':
+Shrink_test.cpp:(.text._ZN8MyVectorIsE33correct_pop_back_with_shrink_testEv[_ZN8MyVectorIsE33correct_pop_back_with_shrink_testEv]+0x93): undefined reference to `MyVector<short>::shrink_to_fit()'
+collect2: error: ld returned 1 exit status
+","/usr/bin/ld: /tmp/ccYobZFn.o: in function `testSize()':
+Size_test.cpp:(.text+0x24): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: Size_test.cpp:(.text+0x5d): undefined reference to `MyVector<short>::size()'
+collect2: error: ld returned 1 exit status
+","In file included from unit_tests/TemplateCheck_test.cpp:1:
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = char]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = MyVector<std::__cxx11::basic_string<char> >]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+hw/mwcxp5/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = std::__cxx11::basic_string<char>]’:
+hw/mwcxp5/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+/usr/bin/ld: /tmp/ccreJgUI.o: in function `testBack()':
+TemplateCheck_test.cpp:(.text+0x2e): undefined reference to `MyVector<short>::MyVector()'
+/usr/bin/ld: TemplateCheck_test.cpp:(.text+0x79): undefined reference to `MyVector<char>::MyVector()'
+/usr/bin/ld: TemplateCheck_test.cpp:(.text+0xc0): undefined reference to `MyVector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::MyVector()'
+/usr/bin/ld: TemplateCheck_test.cpp:(.text+0x145): undefined reference to `MyVector<MyVector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::MyVector()'
+/usr/bin/ld: /tmp/ccreJgUI.o: in function `MyVector<MyVector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::correct_push_back(MyVector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&)':
+TemplateCheck_test.cpp:(.text._ZN8MyVectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE17correct_push_backERKS6_[_ZN8MyVectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE17correct_push_backERKS6_]+0xba): undefined reference to `MyVector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::MyVector()'
+/usr/bin/ld: TemplateCheck_test.cpp:(.text._ZN8MyVectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE17correct_push_backERKS6_[_ZN8MyVectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE17correct_push_backERKS6_]+0x111): undefined reference to `MyVector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator=(MyVector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&)'
+/usr/bin/ld: TemplateCheck_test.cpp:(.text._ZN8MyVectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE17correct_push_backERKS6_[_ZN8MyVectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE17correct_push_backERKS6_]+0x1ca): undefined reference to `MyVector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::operator=(MyVector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&)'
+collect2: error: ld returned 1 exit status
+","/usr/bin/ld: /tmp/ccXC1py5.o: in function `main':
+00name_test.cpp:(.text+0x30): undefined reference to `get_identity(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)'
+collect2: error: ld returned 1 exit status
+",no compile for main
