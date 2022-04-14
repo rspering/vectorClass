@@ -1,0 +1,57 @@
+Username (not for points),Assign_test.cpp,At_test.cpp,Back_test.cpp,BracketOp_test.cpp,Capacity_test.cpp,Clear_test.cpp,CopyConstructor_test.cpp,Erase_test.cpp,Front_test.cpp,Insert_test.cpp,OpEqual_test.cpp,PopBack_test.cpp,PushBack_test.cpp,Reserve_test.cpp,Shrink_test.cpp,Size_test.cpp,TemplateCheck_test.cpp,"Username accurate (0 good, 1 bad)",Bytes definitely lost (memory leak) (0 is perfect)
+rjstrd,Probably crashed,pass,pass,pass,pass,pass,"In file included from hw/rjstrd/MyVector.h:243,
+                 from unit_tests/CopyConstructor_test.cpp:1:
+hw/rjstrd/MyVector.hpp: In instantiation of ‘MyVector<T>::MyVector(const MyVector<T>&) [with T = short int]’:
+unit_tests/CopyConstructor_test.cpp:11:46:   required from here
+hw/rjstrd/MyVector.hpp:130:23: error: passing ‘const MyVector<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  130 |     for (int i = 0; i < source.size(); i++)
+hw/rjstrd/MyVector.hpp:71:5: note:   in call to ‘int MyVector<T>::size() [with T = short int]’
+   71 | int MyVector<T>::size()
+      |     ^~~~~~~~~~~
+In file included from unit_tests/CopyConstructor_test.cpp:1:
+hw/rjstrd/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/rjstrd/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+",pass,pass,Probably crashed,"In file included from hw/rjstrd/MyVector.h:243,
+                 from unit_tests/OpEqual_test.cpp:1:
+hw/rjstrd/MyVector.hpp: In instantiation of ‘MyVector<T>& MyVector<T>::operator=(const MyVector<T>&) [with T = short int]’:
+unit_tests/OpEqual_test.cpp:13:18:   required from here
+hw/rjstrd/MyVector.hpp:142:23: error: passing ‘const MyVector<short int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  142 |     for (int i = 0; i < source.size(); i++)
+hw/rjstrd/MyVector.hpp:71:5: note:   in call to ‘int MyVector<T>::size() [with T = short int]’
+   71 | int MyVector<T>::size()
+      |     ^~~~~~~~~~~
+In file included from unit_tests/OpEqual_test.cpp:1:
+hw/rjstrd/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/rjstrd/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+",pass,Probably crashed,pass,pass,pass,"In file included from hw/rjstrd/MyVector.h:243,
+                 from unit_tests/TemplateCheck_test.cpp:1:
+hw/rjstrd/MyVector.hpp: In instantiation of ‘MyVector<T>& MyVector<T>::operator=(const MyVector<T>&) [with T = std::__cxx11::basic_string<char>]’:
+hw/rjstrd/MyVector.h:167:34:   required from ‘void MyVector<T>::correct_push_back(const T&) [with T = MyVector<std::__cxx11::basic_string<char> >]’
+unit_tests/TemplateCheck_test.cpp:23:51:   required from here
+hw/rjstrd/MyVector.hpp:142:23: error: passing ‘const MyVector<std::__cxx11::basic_string<char> >’ as ‘this’ argument discards qualifiers [-fpermissive]
+  142 |     for (int i = 0; i < source.size(); i++)
+hw/rjstrd/MyVector.hpp:71:5: note:   in call to ‘int MyVector<T>::size() [with T = std::__cxx11::basic_string<char>]’
+   71 | int MyVector<T>::size()
+      |     ^~~~~~~~~~~
+In file included from unit_tests/TemplateCheck_test.cpp:1:
+hw/rjstrd/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = short int]’:
+hw/rjstrd/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+hw/rjstrd/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = char]’:
+hw/rjstrd/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+hw/rjstrd/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = MyVector<std::__cxx11::basic_string<char> >]’:
+hw/rjstrd/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+hw/rjstrd/MyVector.h: In member function ‘T& MyVector<T>::correct_at(int) [with T = std::__cxx11::basic_string<char>]’:
+hw/rjstrd/MyVector.h:153:9: warning: control reaches end of non-void function [-Wreturn-type]
+  153 |         }
+      |         ^
+",0,0
