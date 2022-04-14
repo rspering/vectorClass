@@ -126,7 +126,7 @@ MyVector<T>::MyVector(const MyVector<T> &source)
 {
     data_size = source.data_size;
     reserved_size = source.reserved_size;
-    T* tempData = new T[reserved_size];
+    m_data = new T[reserved_size];
     for (int i = 0; i < size(); i++)
     {
         m_data[i] = source.m_data[i];
@@ -159,6 +159,8 @@ void MyVector<T>::assign(int count, const T &value)
 {
     delete[] m_data;
     m_data = new T[count];
+    data_size = count;
+    reserve(count * 2);
     for (int i = 0; i < count; i++)
     {
         m_data[i] = value;
