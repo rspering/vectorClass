@@ -1,11 +1,11 @@
 Username (not for points): rjstrd
-Assign_test.cpp: Probably crashed
+Assign_test.cpp: pass
 At_test.cpp: pass
 Back_test.cpp: pass
 BracketOp_test.cpp: pass
 Capacity_test.cpp: pass
 Clear_test.cpp: pass
-CopyConstructor_test.cpp: Probably crashed
+CopyConstructor_test.cpp: pass
 Erase_test.cpp: pass
 Front_test.cpp: pass
 Insert_test.cpp: Probably crashed
