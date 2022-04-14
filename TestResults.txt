@@ -8,10 +8,10 @@ Clear_test.cpp: pass
 CopyConstructor_test.cpp: pass
 Erase_test.cpp: pass
 Front_test.cpp: pass
-Insert_test.cpp: Probably crashed
+Insert_test.cpp: pass
 OpEqual_test.cpp: pass
 PopBack_test.cpp: pass
-PushBack_test.cpp: Probably crashed
+PushBack_test.cpp: pass
 Reserve_test.cpp: pass
 Shrink_test.cpp: pass
 Size_test.cpp: pass

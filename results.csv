@@ -1,2 +1,2 @@
 Username (not for points),Assign_test.cpp,At_test.cpp,Back_test.cpp,BracketOp_test.cpp,Capacity_test.cpp,Clear_test.cpp,CopyConstructor_test.cpp,Erase_test.cpp,Front_test.cpp,Insert_test.cpp,OpEqual_test.cpp,PopBack_test.cpp,PushBack_test.cpp,Reserve_test.cpp,Shrink_test.cpp,Size_test.cpp,TemplateCheck_test.cpp,"Username accurate (0 good, 1 bad)",Bytes definitely lost (memory leak) (0 is perfect)
-rjstrd,pass,pass,pass,pass,pass,pass,pass,pass,pass,Probably crashed,pass,pass,Probably crashed,pass,pass,pass,pass,0,0
+rjstrd,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,0,0
