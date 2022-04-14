@@ -98,9 +98,13 @@ void MyVector<T>::push_back(const T &x)
 {
     m_data[size()] = x;
     data_size++;
-    if (data_size == reserved_size)
+    if (data_size == reserved_size && data_size != 0)
     {
         reserve(capacity() * 2);
+    }
+    else if (data_size == reserved_size && data_size == 0)
+    {
+        reserve(1);
     }
 }
 
@@ -185,9 +189,13 @@ void MyVector<T>::insert(int i, const T &x)
     }
     m_data[i] = x;
     data_size++;
-    if (data_size == reserved_size)
+    if (data_size == reserved_size && data_size != 0)
     {
         reserve(capacity() * 2);
+    }
+    else if (data_size == reserved_size && data_size == 0)
+    {
+        reserve(1);
     }
 }
 
