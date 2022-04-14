@@ -126,8 +126,8 @@ MyVector<T>::MyVector(const MyVector<T> &source)
 {
     data_size = source.data_size;
     reserved_size = source.reserved_size;
-    T* tempData = new T[source.reserved_size];
-    for (int i = 0; i < source.size(); i++)
+    T* tempData = new T[reserved_size];
+    for (int i = 0; i < size(); i++)
     {
         m_data[i] = source.m_data[i];
     }
@@ -138,8 +138,8 @@ MyVector<T> & MyVector<T>::operator=(const MyVector<T> &source)
 {
     data_size = source.data_size;
     reserved_size = source.reserved_size;
-    T* tempData = new T[source.reserved_size];
-    for (int i = 0; i < source.size(); i++)
+    T* tempData = new T[reserved_size];
+    for (int i = 0; i < size(); i++)
     {
         tempData[i] = source.m_data[i];
     }
