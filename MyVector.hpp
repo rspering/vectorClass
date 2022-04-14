@@ -96,7 +96,7 @@ void MyVector<T>::pop_back()
 template <typename T>
 void MyVector<T>::push_back(const T &x)
 {
-    m_data[size() + 1] = x;
+    m_data[size()] = x;
     data_size++;
     if (data_size == reserved_size)
     {
@@ -184,6 +184,7 @@ void MyVector<T>::insert(int i, const T &x)
         m_data[k] = m_data[k - 1];
     }
     m_data[i] = x;
+    data_size++;
     if (data_size == reserved_size)
     {
         reserve(capacity() * 2);
