@@ -96,15 +96,15 @@ void MyVector<T>::pop_back()
 template <typename T>
 void MyVector<T>::push_back(const T &x)
 {
-    m_data[size()] = x;
-    data_size++;
-    if (data_size == reserved_size && data_size != 0)
-    {
-        reserve(capacity() * 2);
-    }
-    else if (data_size == reserved_size && data_size == 0)
+    if (size() == 0)
     {
         reserve(1);
+    }
+    m_data[size()] = x;
+    data_size++;
+    if (data_size == reserved_size)
+    {
+        reserve(capacity() * 2);
     }
 }
 
@@ -183,19 +183,19 @@ void MyVector<T>::clear()
 template <typename T>
 void MyVector<T>::insert(int i, const T &x)
 {
-    for(int k = (size() - 1); k >= i; k--)
+    if(data_size == 0)
+    {
+        reserve(1);
+    }
+    for(int k = size(); k >= i; k--)
     {
         m_data[k] = m_data[k - 1];
     }
     m_data[i] = x;
     data_size++;
-    if (data_size == reserved_size && data_size != 0)
+    if (data_size == reserved_size)
     {
         reserve(capacity() * 2);
-    }
-    else if (data_size == reserved_size && data_size == 0)
-    {
-        reserve(1);
     }
 }
 
